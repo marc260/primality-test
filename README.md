@@ -2,6 +2,37 @@
 
 Fermat primality tests using modular exponentiation.
 
+## Pseudocode
+
+### Modular exponentiation
+
+```python
+function modexp(x,y,N)
+Input: Two n-bit integers x and N, an integer exponent y
+Output: x y mod N
+
+if y = 0: return 1
+z = modexp(x,by/2c,N)
+if y is even:
+    return z 2 mod N
+else:
+    return x · z 2 mod N
+```
+
+### Fermat 
+
+```python
+function primality(N)
+Input: Positive integer N
+Output: yes/no
+
+Pick a positive integer a < N at random
+if a N−1 ≡ 1 (mod N):
+    return yes
+else:
+    return no
+```
+
 ## Running the tests
 
 Since Fermat is a probabilistic test to determine if a number is a prime in the tests I tried to trick the Algorithm by using many semiprime numbers.
