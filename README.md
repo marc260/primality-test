@@ -42,13 +42,13 @@ Since Fermat is a probabilistic test to determine if a number is a prime in the 
 The inputs for these test were the following ([semiprimes](http://oeis.org/A066265)):
 
 ```
-3, 34, 299, 2625, 23378, 210035, 1904324, 17427258, 160788536, 1493776443, 13959990342
+2625, 23378, 210035, 1904324, 17427258, 160788536, 1493776443, 13959990342
 ```
 
 And also, real primes:
 
 ```
-11, 13, 17, 209669, 143555297
+209669, 104743, 105023, 105359, 105613
 ```
 
 Finally, the algorithm ran for k = 1000 tries and 100000 tries.
@@ -59,15 +59,25 @@ The output table is formatted as:
 
 The number, number of times it was counted as prime, number of times it was counted as not prime, the percentage of the time that was counted as prime or not, and the algorithm's final verdict as to whether it it prime or not.
 
-
-Output for k = 1000
+Output for k = 100
 ```
-Table output
-```
-
-Output for k = 100000
-```
-Table output
+Enter N: 2625, 23378, 210035, 1904324, 17427258, 160788536, 1493776443, 13959990342, 209669, 104743, 105023, 105359, 105613
+Enter k: 100
+------------------------------------------------------------------
+N           Passed    !Passed   Prime?              Yes %     Not %     
+2625        0         100       !Prime              0.000	100.000
+23378       0         100       !Prime              0.000	100.000
+210035      0         100       !Prime              0.000	100.000
+1904324     0         100       !Prime              0.000	100.000
+17427258    0         100       !Prime              0.000	100.000
+160788536   0         100       !Prime              0.000	100.000
+1493776443  0         100       !Prime              0.000	100.000
+13959990342 0         100       !Prime              0.000	100.000
+209669      100       0         Prime               100.000	0.000
+104743      100       0         Prime               100.000	0.000
+105023      100       0         Prime               100.000	0.000
+105359      100       0         Prime               100.000	0.000
+105613      100       0         Prime               100.000	0.000
 ```
 
 ## License
