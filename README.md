@@ -12,7 +12,7 @@ Input: Two n-bit integers x and N, an integer exponent y
 Output: x y mod N
 
 if y = 0: return 1
-z = modexp(x,by/2c,N)
+z = modexp(x,floor(y/2),N)
 if y is even:
     return z 2 mod N
 else:
@@ -51,7 +51,7 @@ And also, real primes:
 209669, 104743, 105023, 105359, 105613
 ```
 
-Finally, the algorithm ran for k = 1000 tries and 100000 tries.
+Finally, the algorithm ran for k = 100 tries.
 
 ### Outputs
 
